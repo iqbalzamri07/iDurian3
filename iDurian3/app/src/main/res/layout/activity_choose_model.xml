@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Use Relative Layout instead of default constrain layout.-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background1"
+    tools:context="org.tensorflow.lite.examples.classification.ChooseModel">
+
+
+    <Button
+        android:id="@+id/btn_realtime"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/custom_button"
+        android:text="REALTIME"
+        app:layout_constraintBottom_toTopOf="@+id/btn_takePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_uploadPhoto"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/custom_button"
+        android:text="Upload Photo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_takePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_takePhoto"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/custom_button"
+        android:text="Take Photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="761dp"
+        android:layout_height="567dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_realtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
+        app:srcCompat="@drawable/idurian3_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
